@@ -39,7 +39,7 @@ export default function Footer() {
   const socialLinks = [
     { name: 'GitHub', emoji: '🐙', href: 'https://github.com/mdshawon63' },
     { name: 'LinkedIn', emoji: '💼', href: 'https://www.linkedin.com/in/mohammad-shawon-sikdar-b67098388/' },
-    { name: 'Facebook', emoji: '👥', href: 'https://facebook.com' },
+    { name: 'Facebook', emoji: '👥', href: 'https://www.facebook.com/mohammad.shawon.sikdar' },
   ];
 
   return (
