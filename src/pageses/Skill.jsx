@@ -1,12 +1,13 @@
 import React from 'react'
-import { FaJava, FaReact } from 'react-icons/fa'
+import {  FaReact } from 'react-icons/fa'
 import { SiFastapi, SiTailwindcss } from 'react-icons/si'
 import { motion } from 'framer-motion'
+import { IoLogoJavascript } from "react-icons/io";
 
 export default function Skill() {
   
   const skills = [
-    { icon: <FaJava />, name: "Java", color: "bg-red-500" },
+    { icon: <IoLogoJavascript />, name: "Java Script", color: "bg-red-500" },
     { icon: <FaReact />, name: "React", color: "bg-blue-500" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "bg-cyan-500" },
     { icon: <SiFastapi />, name: "FastAPI", color: "bg-green-500" }
