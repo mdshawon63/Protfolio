@@ -76,7 +76,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 placeholder-gray-500"
                     placeholder="Your name"
                   />
                 </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 placeholder-gray-500"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows="5"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-200 resize-none placeholder-gray-500"
                     placeholder="Tell me about your project..."
                   ></textarea>
                 </div>
@@ -140,67 +140,53 @@ export default function Contact() {
 
           {/* Contact information */}
           <div className="animate-slide-in-right">
-            <div className="space-y-8">
-              {/* Contact info card */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl transform transition-all duration-300 hover:scale-[1.02]">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4 group cursor-pointer">
-                    <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-lg font-medium text-gray-800">Gmail</p>
-                      <p className="text-gray-600 group-hover:text-amber-600 transition-colors duration-300">shawonsikdar632@gmail.com</p>
-                    </div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl transform transition-all duration-300 hover:scale-[1.02]">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4 group cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
                   </div>
-
-                  <div className="flex items-center space-x-4 group cursor-pointer">
-                    <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-lg font-medium text-gray-800">Phone</p>
-                      <p className="text-gray-600 group-hover:text-amber-600 transition-colors duration-300">+8801960122965</p>
-                    </div>
+                  <div>
+                    <p className="text-lg font-medium text-gray-800">Gmail</p>
+                    <p className="text-gray-600 group-hover:text-amber-600 transition-colors duration-300">shawonsikdar632@gmail.com</p>
                   </div>
+                </div>
 
-                  <div className="flex items-center space-x-4 group cursor-pointer">
-                    <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-lg font-medium text-gray-800">Location</p>
-                      <p className="text-gray-600 group-hover:text-amber-600 transition-colors duration-300">Dhaka, Bangladesh</p>
-                    </div>
+                <div className="flex items-center space-x-4 group cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-lg font-medium text-gray-800">Phone</p>
+                    <p className="text-gray-600 group-hover:text-amber-600 transition-colors duration-300">+8801960122965</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 group cursor-pointer">
+                  <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-lg font-medium text-gray-800">Location</p>
+                    <p className="text-gray-600 group-hover:text-amber-600 transition-colors duration-300">Dhaka, Bangladesh</p>
                   </div>
                 </div>
               </div>
 
-              {/* Social links */}
-              <div className="bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-8 shadow-xl transform transition-all duration-300 hover:scale-[1.02]">
-                <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
-                <div className="flex justify-center space-x-6">
-                  {['twitter', 'github', 'linkedin', 'dribbble'].map((platform, index) => (
-                    <a
-                      key={platform}
-                      href="#"
-                      className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center transform transition-all duration-300 hover:scale-110 hover:bg-white/30"
-                    >
-                      <span className="text-white font-semibold">
-                        {platform.charAt(0).toUpperCase()}
-                      </span>
-                    </a>
-                  ))}
-                </div>
+              {/* Additional information or call to action */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <p className="text-gray-700 text-center">
+                  I typically respond to emails within 24 hours. Looking forward to hearing from you!
+                </p>
               </div>
             </div>
           </div>
