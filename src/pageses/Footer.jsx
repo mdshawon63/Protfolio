@@ -50,7 +50,7 @@ export default function Footer() {
           
           {/* Left: Your Name */}
           <div className="text-2xl md:text-3xl font-bold text-amber-300">
-            Your Name
+            Md Shawon Sikdar
           </div>
 
           {/* Center: Bangladesh Time & Date */}
